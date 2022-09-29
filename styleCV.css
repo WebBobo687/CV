@@ -37,9 +37,19 @@ header{
     font-weight: 700;
 }
 
+.info {
+    float: center;
+}
+
 #up {
     position: absolute;
-    margin-left: 30vh;
+    margin-left: 180vh;
+    margin-top: -10vh;
+}
+/*---------------------*/
+/*--aside--------------*/
+aside {
+    margin: 10px;
 }
 /*---------------------*/
 
