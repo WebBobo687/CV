@@ -165,25 +165,25 @@ section .content p[data-scroll="in"] {
     
     #asideFormation {
         position: relative;
-        margin-left: 48%;
+        margin-left: 50%;
         margin-top: -24%;
     }
     
     #asideExp {
         position: relative;
-        margin-left: 110%;
-        margin-top: -23.7%;
+        margin-left: 1%;
+        
     }
     
     #asideSkills {
         position: relative;
-        margin-left: 10%;
+        margin-left: 80%;
+        margin-top: -24%;
     }
     
     #asideLoisirs {
         position: relative;
-        margin-left: 90%;
-        margin-top: -24%;
+        margin-left: 50%;
     }
     
   }
