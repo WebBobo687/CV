@@ -148,6 +148,7 @@ section .content p[data-scroll="in"] {
       width: 100%;
       height: 60%;
       margin-left: -2%;
+      margin-top: 25%;
     }
 
     section {
@@ -159,18 +160,19 @@ section .content p[data-scroll="in"] {
     #asideProfil {
         position: relative;
         margin-left: 1%;
+        margin-top: 1%;
     }
     
     #asideFormation {
         position: relative;
-        margin-left: 28%;
-        margin-top: -13.54%;
+        margin-left: 48%;
+        margin-top: -24%;
     }
     
     #asideExp {
         position: relative;
-        margin-left: 63%;
-        margin-top: -13.54%;
+        margin-left: 110%;
+        margin-top: -23.7%;
     }
     
     #asideSkills {
@@ -180,8 +182,8 @@ section .content p[data-scroll="in"] {
     
     #asideLoisirs {
         position: relative;
-        margin-left: 50%;
-        margin-top: -13.54%;
+        margin-left: 90%;
+        margin-top: -24%;
     }
     
   }
