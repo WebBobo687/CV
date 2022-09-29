@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 1%;
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
     background: #262626;
@@ -9,7 +9,7 @@ body {
 /*-------INFO----------*/
 header{
     margin-left: 50vw;
-    margin-top: 45vh;
+    margin-top: 0%;
     margin-right: 10vw;
     width: 50vw;
     position: fixed;
@@ -22,7 +22,6 @@ header{
     position: relative;
     height: auto;
     max-width: 30vw;
-    margin-top: -40vh;
     margin-left: -50;
  }
  
@@ -81,7 +80,6 @@ section {
     display: flex;
     justify-content: left;
     align-items: center;
-    margin-left: 20px;
 }
 
 section .content{
@@ -172,7 +170,7 @@ section .content p[data-scroll="in"] {
     header {
       position: relative;
       width: 100%;
-      margin-left: -10%;
+      margin-left: -2%;
     }
 
     section {
@@ -180,5 +178,32 @@ section .content p[data-scroll="in"] {
         width: 100%;
     }
 
+    #asideProfil {
+        position: relative;
+        margin-left: 1%;
+    }
+    
+    #asideFormation {
+        position: relative;
+        margin-left: 28%;
+        margin-top: -13.54%;
+    }
+    
+    #asideExp {
+        position: relative;
+        margin-left: 63%;
+        margin-top: -13.54%;
+    }
+    
+    #asideSkills {
+        position: relative;
+        margin-left: 10%;
+    }
+    
+    #asideLoisirs {
+        position: relative;
+        margin-left: 50%;
+        margin-top: -13.54%;
+    }
     
   }
