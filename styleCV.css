@@ -10,6 +10,7 @@ body {
 header{
     margin-left: 50%;
     width: 40%;
+    height: 80%;
     position: fixed;
     text-align: center;
     font-size: 1em;
