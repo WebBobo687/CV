@@ -7,7 +7,7 @@
 body {
     background: #f1f1f1;
     font-family: roboto, sans-serif;
-    font-size: clamp(25px, 7vw, 40px);
+    font-size: calc(3vw + 10px);
 }
 
 /* Navigation */
@@ -27,6 +27,7 @@ nav a {
     text-decoration: none;
     text-transform: uppercase;
     position: relative;
+    cursor: pointer;
 }
 
 nav a:first-child {
@@ -67,43 +68,53 @@ nav a:hover::after {
     font-weight: 900;
 }
 
-h1 span {
+.home h1 span {
     margin: 0 10px;
-    font-size: calc(5vmin + 10px);
-    color: #484848;
-    animation: flash 1.2s linear infinite;
+    font-size: 1em;
+    color: #f1f1f1e3;
+    animation: blink 2s infinite alternate;
 }
 
-@keyframes flash {
-    0% {
-        color: #d40000e5;
-        text-shadow: 0 0 7px #d40000e5, 0 0 50px #ffc400;
-    }
-    90% {
-        color: #3c3c3c;
-        text-shadow: none;
-    }
-    100% {
-        color: #3c3c3c;
-        text-shadow: none;
-    }
-}
+@keyframes blink {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+            0.1vw 0vw 0.2vw #ff7474,
+            0.15vw 0vw 0.2vw #ff7474,
+            0.4vw 0vw 0.2vw #ff7474,
+            
+            0.1vw 0vw 0.25vw #ff3131,
+            0.15vw 0vw 0.25vw #ff3131,
+            0.4vw 0vw 0.25vw #ff3131,
+            
+            0.1vw 0vw 1vw #ff3131,
+            0.15vw 0vw 1vw #ff3131,
+            0.4vw 0vw 1vw #ff3131,
 
-@for $i from 1 through 9 {
-    h1 span:nth-child(#{$i}){
-        animation-delay: ($i / 9) + s;
+            0.1vw 0vw 0.5vw #fb0404,
+            0.15vw 0vw 0.5vw #fb0404,
+            0.4vw 0vw 2vw #fb0404,
+
+            0.1vw 0vw 5vw #fb0404,
+            0.15vw 0vw 20vw #fb0404,
+            0.4vw 0vw 10vw #fb0404;
+    }
+
+    20%, 24%, 55% {
+        text-shadow: none;
     }
 }
 
 .home .subtitle {
     font-family: roboto, sans-serif;
+    margin-block: 5%;
     font-size: 0.5em;
     text-transform: uppercase;
     color: #f1f1f1;
     font-weight: 900;
 }
 
-.stream-link {
+// bouton pour CV
+.cv-btn {
     display: flex;
     align-items: center;
     text-align: center;
@@ -120,15 +131,25 @@ h1 span {
     margin-top: 15px;
 }
 
-.stream-link:hover {
-    box-shadow: 0 5px 15px rgba(255, 2552, 255, 0.2);
+.cv-btn:hover {
+    box-shadow: 0 5px 15px rgba(255, 2552, 255, 0.2)
 }
 
-.stream-link img {
+.cv-btn:focus {
+    box-shadow: 0 5px 15px rgba(255, 2552, 255, 0.2)
+}
+
+.cv-btn:active {
+    background: #3c3c3c;
+    color: #fff;
+}
+
+.cv-btn img {
     width: 30px;
     height: 30px;
 }
 
+// bouton descendre
 .floating-btn {
     position: absolute;
     bottom: 5%;
@@ -169,10 +190,6 @@ h1 span {
 
     .subtitle {
         margin-top: 5px;
-    }
-
-    nav a {
-        font-size: 18px;
     }
 
     .stream-link {
