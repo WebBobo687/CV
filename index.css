@@ -7,7 +7,7 @@
 body {
   background: #f1f1f1;
   font-family: roboto, sans-serif;
-  font-size: calc(3vw + 10px);
+  font-size: calc(4vw + 10px);
 }
 
 /* Navigation */
@@ -22,7 +22,7 @@ nav {
 
 nav a {
   color: #fff;
-  font-size: 0.4em;
+  font-size: 0.5em;
   margin: 0 10px;
   text-decoration: none;
   text-transform: uppercase;
@@ -49,10 +49,9 @@ nav a:hover::after {
 }
 
 .home {
+  width: 100vw;
   height: 100vh;
   background: #3c3c3c;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
   padding: 0 50px;
   position: relative;
@@ -69,7 +68,6 @@ nav a:hover::after {
 
 .home h1 span {
   margin: 0 10px;
-  font-size: 1em;
   color: rgba(241, 241, 241, 0.8901960784);
   animation: blink 2s infinite alternate;
 }
@@ -101,7 +99,7 @@ nav a:hover::after {
   justify-content: space-between;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 0.3em;
+  font-size: 0.5em;
   text-decoration: none;
   color: #333;
   padding: 10px;
